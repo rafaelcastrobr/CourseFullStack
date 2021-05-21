@@ -4,25 +4,30 @@
     box-sizing: border-box;
 }
 
+html {
+    height: 62.5%;
+}
+
 body {
     background-image: url('https://assets.nflxext.com/ffe/siteui/vlv3/7a33204b-893d-4792-8494-b9d6cbc73848/a0490f7e-b2dd-44ed-99bb-9c31aa04f7f5/BR-pt-20210502-popsignuptwoweeks-perspective_alpha_website_small.jpg');
     background-size: inherit;
-    
+    min-width: 320px;
     
 }
 
 .main-body {
-    height: 1000px;
+    height: 100vh;
     background-color: rgba(0,0,0,0.5);
+    background-image: linear-gradient(to top,rgba(0,0,0,.8) 0,rgba(0,0,0,0) 60%,rgba(0,0,0,.8) 100%);
 }
 
 .main-header {
-    background-color: rgba(0,0,0,0.4);
     height: 50px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    padding: 0 25px;
+    padding-top: 20px;
+    margin: 0 40px;
 }
 
 .main-navigation {
@@ -31,44 +36,68 @@ body {
     justify-content: space-between;
 }
 
-.decoration{
+.main-title .decoration{
     text-decoration: none;
     color: #f00;
-
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
 .main-btn {
-    background-color: #4f5;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 78px;
+    height: 34px;
+    font-size: 0.8rem;
+    font-weight: lighter;
+    background-color: #f00;
+    color: #fff;
+    border-radius: 5px;
 }
 
 .main-card {
-    padding: 200px 350px;
-    text-align: center;
     display: flex;
+    text-align: center;
     flex-direction: column;
-    height: auto;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    width: auto;
+    
 }
 
-
 .card-text {
-    margin-bottom: 15px;
     color: #fff;
     font-family: sans-serif;
 }
 
+.card-text.-margin {
+    margin: 30px;
+}
+
 .card-text.-line {
     font-weight: lighter;
+    padding: 0 40px 10px;
 }
 
 .card-text.-principal {
     font-size: 50px;
+    max-width: 640px;
+    margin: 0 auto;
 }
 
 .main-email input{
-
+    padding-left: 10px;
     border: 2px solid #ddd;
     width: 500px;
     height: 50px;
+}
+
+input::placeholder {
+    padding-left: 10px;
+    opacity: 0.4;
 }
 
 .main-button {
