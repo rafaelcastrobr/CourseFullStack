@@ -1,3 +1,12 @@
+.menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    border-bottom: 0.1rem solid var(--light-gray-color);
+}
+
 .menu-content {
     display: flex;
     justify-content: space-between;
