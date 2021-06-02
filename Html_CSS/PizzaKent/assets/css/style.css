@@ -6,80 +6,43 @@
 
 html {
   height: 62.5%;
+  scroll-behavior: smooth;
 }
+/* solution problem respons */
 
-@media (max-width: 630px) {
+
+img { 
+  max-width:100%;
+	height:auto;
+} 
+
+
+
+
+@media (max-width: 1000px) {
   .main-section.-home
    {
     height: 60vh;
    }
-}
+
+   .slide img{
+    max-width: 100vh;
+    max-height: 25rem;
+  }
+} 
+
+@media (max-width: 700px) {
+
+   .slide img{
+    max-width: 100vh;
+    max-height: 23.5rem;
+  }
+} 
+
 
 .main-section {
   height: 100vh;
 }
-
-.top-home {
-  height: 100%;
-  position: relative
-}
-
-.slider-home {
-  margin: 1.7rem 0 0 auto;
-}
-
-.slider-home input {
-  display: none;
-}
-
-.slider-home label {
-  background-color: #000;
-  bottom: 1rem;
-  cursor: pointer;
-  display: block;
-  height: 1rem;
-  position: absolute;
-  width: 1rem;
-  z-index: 10;
-}
-
-.slider-home li:nth-child(1) label {
-  left: 1rem;
-}
-
-.slider-home li:nth-child(2) label {
-  left: 4rem;
-}
-
-.slider-home li:nth-child(3) label {
-  left: 7rem;
-}
-
-.slider-home img {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.slider-home li input:checked ~ .img-size {
-  opacity: 1;
-  visibility: visible;
-  z-index: 10;
-}
-
-.slider-home li {
-  list-style: none;
-}
-
-.slider-home .img-size {
-  width: 100%;
-  max-height: 100%;
-  vertical-align: top;
-  position: absolute;
-}
-
-
-
-
 
 .color1 {
   background-color: red;
@@ -91,4 +54,33 @@ html {
 
 .color3 {
   background-color: yellow;
+}
+
+/*start hidden img */
+
+.main-section.-home {
+  overflow: hidden;
+}
+
+.main-slides input {
+  display: none;
+}
+
+.main-slider {
+  
+}
+
+.main-slides {
+  display: flex;
+  flex-direction: column-reverse;
+}
+
+.slide {
+  height: 20px;
+  transition: 2s;
+}
+
+.slide img{
+  min-width: 100%;
+  height: 100vh;
 }
