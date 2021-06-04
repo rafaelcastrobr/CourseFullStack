@@ -7,6 +7,7 @@
 html {
   height: 62.5%;
   scroll-behavior: smooth;
+  font-family: 'Limelight', cursive;
 }
 /* solution problem respons */
 
@@ -20,15 +21,11 @@ img {
   height: 100vh;
 }
 
-.color1 {
-  background-color: red;
+.-color3 {
+  background-color: #FF8800;
 }
 
-.color2 {
-  background-color: black
-}
-
-.color3 {
-  background-color: yellow;
+.main-section.-contatos {
+  
 }
 

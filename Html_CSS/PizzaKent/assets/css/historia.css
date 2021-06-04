@@ -1,0 +1,19 @@
+.main-section.-color2 {
+  background-color: #FF0022;
+}
+
+.main-section.-historia{
+  display: flex;
+  justify-content: center;
+}
+
+.historia-container {
+  padding: 5rem;
+}
+
+.main-historia p {
+  display: flex;
+  align-items: baseline;
+  color: white;
+  text-shadow: 0.1rem 0.1rem 0.1rem black;
+}

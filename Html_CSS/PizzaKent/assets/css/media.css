@@ -8,7 +8,7 @@
     max-width: 100vh;
     max-height: 25rem;
   }
-
+  
 } 
 
 @media (min-height: 700px) {
@@ -20,6 +20,7 @@
     max-width: 100vh;
     max-height: 25.5rem;
   }
+  
 } 
 
 
@@ -49,5 +50,10 @@
   }
   .navigation-manual {
     margin-top: 9rem !important;
+  }
+
+  .main-section.-historia{
+    overflow: hidden;
+    overflow-y: scroll;
   }
 } 

@@ -1,0 +1,38 @@
+.main-section.-pizzas {
+  background-color: #ff8800;
+}
+
+.main-section.-pizzas {
+  height: auto;
+}
+
+.pizzas-title {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 2rem;
+}
+
+.pizzas-container {
+  padding: 5rem;
+}
+
+.pizzas-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  justify-content: center;
+}
+
+.pizzas-grid img{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 4rem;
+  width: 4rem;
+}
+
+.pizza-fonts {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  text-shadow: 0.1rem 0.1rem 0.1rem #fff;
+}
