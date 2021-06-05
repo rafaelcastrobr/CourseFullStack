@@ -51,9 +51,11 @@
   .navigation-manual {
     margin-top: 9rem !important;
   }
+} 
 
+@media (max-width: 600px) {
   .main-section.-historia{
     overflow: hidden;
     overflow-y: scroll;
   }
-} 
+}

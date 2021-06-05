@@ -16,6 +16,7 @@
 	<link rel="stylesheet" href="assets/css/pizzas.css">
 	<link rel="stylesheet" href="assets/css/historia.css">
 	<link rel="stylesheet" href="assets/css/contatos.css">
+	<link rel="stylesheet" href="assets/css/footer.css">
 
 	<title>Pizza Kent</title>
 
@@ -29,7 +30,7 @@
 		<div class="header-secundary">
 			<p><a class="effect-header-secundary" href="#sabores">Sabores</a></p>
 			<p><a class="effect-header-secundary" href="#historia">História</a></p>
-			<p><a class="effect-header-secundary" href="#contatos">Contatos</a></p>
+			<p><a class="effect-header-secundary" href="#contatos">Pedidos</a></p>
 		</div>
 	</header>
 
@@ -44,10 +45,10 @@
 				<!-- radio button end-->
 				<!-- slide images start-->
 				<div class="slide first">
-					<img src="assets/img/pizza1.jpg" alt="promo1">
+					<img src="assets/img/pizza3.jpg" alt="promo1">
 				</div>
 				<div class="slide first">
-					<img src="assets/img/pizza3.jpg" alt="promo3">
+					<img src="assets/img/pizza1.jpg" alt="promo3">
 				</div>
 				<!-- slide images end-->
 				<!-- automatic nav start-->
@@ -73,7 +74,7 @@
 
 	<section id="sabores" class="main-section -color1 -pizzas">
 		<div class="pizzas-container">
-			<h1 class="pizzas-title">Sabores</h1>
+			<h2 class="pizzas-title">Sabores</h2>
 			<div class="pizzas-grid">
 				<div><img src="assets/img/vetorpizza.png" alt="pizzaVetor"></div>
 				<h3 class="pizza-fonts">Calabresa</h3>
@@ -109,9 +110,9 @@
 
 	<section id="historia" class="main-section -color2 -historia">
 		<div class=historia-container>
-			<di class="main-historia">
+			<div class="main-historia">
 				<p><span style="font-size: 10rem;">A</span> casa foi fundada em 1981, à Rua Cardoso de Almeida, Perdizes, em imóvel construído no início do século XX, no
-				qual residiu Assis Chateaubriand. O nome escolhido foi “Pizzaria Micheluccio”, que se tornou famosa por sua
+				qual residiu Assis Chateaubriand. O nome escolhido foi “Pizzaria Kent, que se tornou famosa por sua
 				tradicional pizza de massa grossa e bordas altas.<br><br>
 				O atendimento do delivery é totalmente informatizado, garantindo uma entrega de qualidade, rápida e eficiente nos
 				bairros de Perdizes, Vila Pompéia, Água Branca, Pacaembu, Sumaré, Sumarezinho, Vila Madalena, Barra Funda,
@@ -119,27 +120,35 @@
 				de Pinheiros, Villa Lobos, Vila Romana, Vila Ipojuca, e algumas regiões da Lapa. <br><br>
 				Ligue e Confira!!!
 			</p>
-			</di>
+			</div>
 		</div>
 
 	</section>
 
 	<section id="contatos" class="main-section -color3 -contatos">
-		<div>
+		<h1>Pedidos</h1>
+		<div class="contatos-container">
 			<form action="" method="GET">
-				<div>
-					<label for="nome">Nome</label>
-						<input name="nome" type="text">
+				<div class="contatos-nome-post">
+					<label  for="nome-post">Nome: </label>
+						<input id="nome-post" type="text">
 				</div>
 				<div>
-					<label for="tel">Telefone</label>
-						<input name="tel" type="number">
+					<label for="tel-post">Telefone: </label>
+						<input id="tel-post" type="number" maxlength="9">
 				</div>
 				<div>
-					<label for="escolha">Pizzas</label>
-						<select name="escolha" id=""> 
-
-							
+					<label for="escolha-post">Pizzas</label>
+						<select id="escolha-post" > 
+							<option value="valor1">Calabresa</option>
+							<option value="valor2">Mussarela</option>
+							<option value="valor3">Palmito</option>
+							<option value="valor4">Atum</option>
+							<option value="valor5">Marguerita</option>
+							<option value="valor6">Portuguesa</option>
+							<option value="valor7">Calabresa/Caturpiry</option>
+							<option value="valor8">Frango/Caturpiry</option>
+							<option value="valor9">Frango/Cheddar</option>
 						</select>
 				</div>
 
@@ -151,7 +160,17 @@
 
 	</section>
 
-	<script type="text/javascript" src="assets/js/scriptX.js"></script>
+	<footer class="main-section -rodape">
+		<div class="main-fornecedor">
+			<h3>Trabalhamos com</h3>
+			<img src="assets/img/logos_fornecedores.png" alt="logos_fornecedores">
+		</div>
+		<div class="main-tel">
+			<p> Telefone: (00)0000-00000</p>
+		</div>
+	</footer>
+
+	<script src="assets/js/script.js"></script>
 </body>
 
 </html>

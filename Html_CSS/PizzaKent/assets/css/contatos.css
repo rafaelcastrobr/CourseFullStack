@@ -1,0 +1,54 @@
+.-color3 {
+  background-color: #caa8f5;
+}
+
+.main-section.-contatos {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+  background-image: url(../img/pizza2.jpg);
+}
+
+.main-section.-contatos h1{
+  display: block;
+  margin-bottom: 2rem;
+
+}
+
+.contatos-container {
+  display: flex;
+  padding: 5rem;
+  border: 0.1rem solid #6e4455;
+  background-color: #caa8f5;
+}
+
+.contatos-container form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.contatos-container div {
+  margin-bottom: 1rem;
+}
+
+.contatos-container label {
+  font-size: 1.5rem;
+}
+
+.contatos-container input {
+  height: 2rem;
+}
+
+.contatos-nome-post input {
+  width: 20rem;
+}
+
+.contatos-container button {
+  width: 5rem;
+  height: 2rem;
+  background-color: #6e44ff;
+  font-weight: bold;
+  color: #fff;
+}

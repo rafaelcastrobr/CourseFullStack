@@ -1,19 +1,20 @@
 .main-section.-color2 {
-  background-color: #FF0022;
+  background-color: #7b2cbf;
 }
 
 .main-section.-historia{
+
   display: flex;
   justify-content: center;
+  border-bottom: 0.2rem solid #6e4455;
 }
 
 .historia-container {
-  padding: 5rem;
+  padding: 3rem;
 }
 
 .main-historia p {
   display: flex;
   align-items: baseline;
-  color: white;
-  text-shadow: 0.1rem 0.1rem 0.1rem black;
+  color: #ccc;
 }
