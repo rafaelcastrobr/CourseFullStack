@@ -9,14 +9,20 @@
   height: auto;
 }
 
+
+.pizzas-container {
+  display: flex;
+  flex-direction: column;
+  padding: 5rem;
+}
+
 .pizzas-title {
   display: flex;
   justify-content: center;
+  font-size: 4rem;
+  color: purple;
+  text-shadow: 0.2rem 0 0 #fff;
   margin-bottom: 2rem;
-}
-
-.pizzas-container {
-  padding: 5rem;
 }
 
 .pizzas-grid {
