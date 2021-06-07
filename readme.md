@@ -4,7 +4,7 @@
 
 - [x] [Landing Page](https://rafaelcastrobr.github.io/CourseFullStack/Html_CSS/Landing-page/)
 - [x] [PizzaKent](https://pizzakent.netlify.app/)
-- [x] [AndFlix - Clone Netflix page home](https://rafaelcastrobr.github.io/CourseFullStack/Html_CSS/AndFlix/)
+- [x] [AndFlix](https://rafaelcastrobr.github.io/CourseFullStack/Html_CSS/AndFlix/) - Clone Netflix page home
 
 ##### ~ Site usado para ajuda
 
