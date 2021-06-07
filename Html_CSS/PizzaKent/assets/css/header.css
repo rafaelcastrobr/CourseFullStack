@@ -5,6 +5,9 @@
   background-color: #eee;
   padding: 1.5rem;
   padding-right: 2.5em;
+  top: 0;
+  left: 0;
+  right: 0;
 }
 
 .header-name {
@@ -42,4 +45,12 @@
 .effect-header-secundary:hover::after {
   width: 50%;
   left: 25%;
+}
+
+.menu-close {
+  display: none;
+  position: fixed;
+  z-index: 2;
+  top: 0;
+  left: 0;
 }

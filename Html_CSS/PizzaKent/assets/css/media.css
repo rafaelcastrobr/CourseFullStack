@@ -51,6 +51,56 @@
   .navigation-manual {
     margin-top: 9rem !important;
   }
+
+  /*start menu site */
+
+  .main-header {
+    display: none !important;
+    position: fixed;
+    z-index: 2;
+    bottom: 0;
+    flex-direction: column;
+    justify-content: center !important;
+  }
+
+  .header-secundary {
+    flex-direction: column;
+    margin-top: 2rem;
+    margin-bottom: 1rem;
+  }
+
+  .header-secundary p {
+    margin-bottom: 2rem;
+  }
+
+  .menu-label::after {
+    content: '☰';
+    position: fixed;
+    z-index: 3;
+    top: 2rem;
+    right: 2rem;
+    background-color: purple;
+    color: white;
+    font-size: 1.5rem;
+    line-height: 2rem;
+    width: 2rem;
+    height: 2rem;
+    text-align: center;
+    padding: 0.3rem;
+    padding-top: 0.4rem;
+    cursor: pointer;
+  }
+
+  .menu-close:checked~.main-header {
+    display: block !important;
+  }
+
+  
+  .menu-close:checked~.menu-label::after {
+    content: '×';
+  }
+   /* end menu site  */
+
 } 
 
 
