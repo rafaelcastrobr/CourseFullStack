@@ -6,8 +6,8 @@
 ### @ Projetos em HTML5 + CSS3
 
 - [x] [Landing Page](https://github.com/rafaelcastrobr/CourseFullStack/tree/master/Html_CSS/Landing-page) - [Page](https://rafaelcastrobr.github.io/CourseFullStack/Html_CSS/Landing-page/)
-- [x] [PizzaKent](https://pizzakent.netlify.app/)
-- [x] [AndFlix](https://github.com/rafaelcastrobr/CourseFullStack/tree/master/Html_CSS/PizzaKent) - [Page](https://github.com/rafaelcastrobr/CourseFullStack/tree/master/Html_CSS/AndFlix) - [Page](https://rafaelcastrobr.github.io/CourseFullStack/Html_CSS/AndFlix/) - Clone Netflix home page
+- [x] [PizzaKent](https://github.com/rafaelcastrobr/CourseFullStack/tree/master/Html_CSS/PizzaKent) - [Page](https://pizzakent.netlify.app/)
+- [x] [AndFlix](https://github.com/rafaelcastrobr/CourseFullStack/tree/master/Html_CSS/PizzaKent) - [Page](https://rafaelcastrobr.github.io/CourseFullStack/Html_CSS/AndFlix/) - Clone Netflix home page
 
 ##### ~ Site usado para ajuda
 
