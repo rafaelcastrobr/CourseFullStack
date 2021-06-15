@@ -27,3 +27,9 @@ alunos.length // tamanho array
 
 
 console.log(alunos);
+
+
+// deixa array independente
+
+const a = [1,2,3];
+const b = [...a]; // por mais que eu altere o B não altera o A

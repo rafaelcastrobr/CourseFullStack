@@ -1,8 +1,7 @@
-let mundo;
-mundo = 4;
-mundo = 10;
+
+// Primitivos (imutáveis) String, number, undefined, boolean,
+// null (bigint, symbol) = valores copiados
+
+// Referência (mutável) - array, object, function = Passados por referÊcia
 
 
-console.log(mundo);
-
-// String, number, undefined, null, boolean, symbol
