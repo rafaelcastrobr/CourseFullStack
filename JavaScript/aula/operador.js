@@ -19,3 +19,8 @@
 let contador = Number('5.5');
 
 console.log(contador);
+
+// conversão para númemros binarios.
+const num = 24;
+
+console.log(num.toString(2));

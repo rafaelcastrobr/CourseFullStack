@@ -7,7 +7,7 @@ const alunos = ['joao', 'maria'];
  alunos.push('Flávio');
 
 
-// adiciona elemento no começo
+ // adiciona elemento no começo
  alunos.unshift('Carlos');
 
 // exclui ultimo elemento
@@ -19,7 +19,7 @@ const alunos = ['joao', 'maria'];
 // deleta qualquer elemento
 delete alunos[2]; // retorna vazio
 
-alunos.slice(0, 1ou-1) // fatia (escolhe) elementos
+alunos.slice(0, 1 ou -1) // fatia (escolhe) elementos
 
 alunos instanceof Array // true false se é array
 

@@ -15,7 +15,7 @@ function meuEscopo () {
 
     pessoas.push({
       nome: nome,
-      sobrenome: nome,
+      sobrenome: sobrenome,
       peso: peso,
       altura: altura
       });
