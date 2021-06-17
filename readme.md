@@ -1,6 +1,6 @@
 # Curso Full Stack @luizomf
 
-<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <img src="img/html5.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"> <img src="img/css3.svg" alt="css3" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="img/javascript.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="img/nodejs.svg" alt="nodejs" width="40" height="40"/> </a>
+<a href="https://developer.mozilla.org/pt-BR/docs/Web/HTML" target="_blank"> <img src="img/html5.svg" alt="html5" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/pt-BR/docs/Web/CSS" target="_blank"> <img src="img/css3.svg" alt="css3" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/en-US/docs/Web/JavaScript" target="_blank"> <img src="img/javascript.svg" alt="javascript" width="40" height="40"/> </a> <a href="https://developer.mozilla.org/pt-BR/docs/Glossary/Node.js" target="_blank"> <img src="img/nodejs.svg" alt="nodejs" width="40" height="40"/> </a>
 
 
 ### @ Projetos em HTML5 + CSS3
@@ -15,6 +15,6 @@
 - [MDN](https://developer.mozilla.org/)
 
 
-### @ Projetos + JavaScript
+### @ Projetos + JavaScript(+NodeJS)
 
 in progress..
