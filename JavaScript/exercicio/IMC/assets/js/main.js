@@ -1,6 +1,12 @@
+const form = document.getElementById('form');
+
+form.addEventListener('submit', function(e) {
+  e.preventDefault();
+});
+
 function IMC (peso, altura) {
   return (peso / (altura ** 2));
-}
+} 
 
 function calcular() {
   const resultado = document.getElementById('resultado');
