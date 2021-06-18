@@ -17,4 +17,7 @@
 
 ### @ Projetos + JavaScript(+NodeJS)
 
+- [x] [Calculadora IMC](https://github.com/rafaelcastrobr/CourseFullStack/tree/master/JavaScript/exercicio/IMC) - [Page](https://rafaelcastrobr.github.io/CourseFullStack//JavaScript/exercicio/IMC/index.html)
+- [ ] 
+
 in progress..
