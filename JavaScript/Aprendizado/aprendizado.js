@@ -29,3 +29,9 @@ let varC = 'C'; // A
   [varA, varB, varC] = [varB, varC, varA] // Da os valores às variavies sem perder seus valores anteriores
 //   A     B    C         A     B     C
 // entrega os valores /  recebes valores na ordem das entregas
+
+
+
+// operação ternária
+condição ? 'valor true' : 'valor false';
+//      se            se não
