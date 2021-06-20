@@ -1,5 +1,5 @@
 
-
+          // Forma mais simplificada //
 // const h1 = document.querySelector('.container h1');
 // const data = new Date();
 // h1.innerHTML = data.toLocaleDateString('pt-BR', { dateStyle: 'full', timeStyle: 'short'});
@@ -23,7 +23,7 @@ function dataAtual() {
 
   const week = nomeDia(data.getDay());
   const dia = addZero(data.getDate());
-  const mes = nomeMes(data.getMonth() + 1);
+  const mes = nomeMes(data.getMonth());
   const ano = addZero(data.getFullYear());
   const hora = addZero(data.getHours());
   const min = addZero(data.getMinutes());
@@ -39,77 +39,19 @@ function addZero(num) {
 // altera nome do dia
 function nomeDia (week) {
 
-  let diaDaSemana;
+  let diaNome = ['Domingo', 'Segunda', 'Terça', 'Quarta', 
+    'Quinta', 'Sexta', 'Sábado'];
 
-  switch(week) {
-    case 0:
-      diaDaSemana = `Domingo`;
-      return diaDaSemana;
-    case 1:
-      diaDaSemana = `Segunda-Feira`;
-      return diaDaSemana;
-    case 2:
-      diaDaSemana = `Terça-Feira`;
-      return diaDaSemana;
-    case 3:
-      diaDaSemana = `Quarta-Feira`;
-      return diaDaSemana;
-    case 4:
-      diaDaSemana = `Quinta-Feira`;
-      return diaDaSemana;
-    case 5:
-      diaDaSemana = `Sexta-Feira`;
-      return diaDaSemana;
-    case 6:
-      diaDaSemana = `Sábado`;
-      return diaDaSemana;
-  }
+  return diaNome[week];
 }
 
 // altera nome do mês
 function nomeMes(mes) {
   
-  let nomeDoMes;
+  let nomeDoMes = ['Janeiro', 'Fevereiro', 'Março', 'Abril', 'Maio',
+      'Junho', 'Julho', 'Agosto', 'Setembro', 'Outubro', 'Novembro', 'Dezembro']
 
-  switch(mes) {
-    case 1:
-      nomeDoMes = `Janeiro`;
-      return nomeDoMes;
-    case 2:
-      nomeDoMes = `Fevereiro`;
-      return nomeDoMes;
-    case 3:
-      nomeDoMes = `Março`;
-      return nomeDoMes;
-    case 4:
-      nomeDoMes = `Abril`;
-      return nomeDoMes;
-    case 5:
-      nomeDoMes = `Maio`;
-      return nomeDoMes;
-    case 6:
-      nomeDoMes = `Junho`;
-      return nomeDoMes;
-    case 7:
-      nomeDoMes = `Julho`;
-      return nomeDoMes;
-    case 8:
-      nomeDoMes = `Agosto`;
-      return nomeDoMes;
-    case 9:
-      nomeDoMes = `Setembro`;
-      return nomeDoMes;
-    case 10:
-      nomeDoMes = `Outubro`;
-      return nomeDoMes;
-    case 11:
-      nomeDoMes = `Novembro`;
-      return nomeDoMes;
-    case 12:
-      nomeDoMes = `Dezembro`;
-      return nomeDoMes;                                                                                                     
-  }
-
+  return nomeDoMes[mes];
 }
 
 //escreve
@@ -117,8 +59,5 @@ function escreveTela() {
   const dataAgora = dataAtual();
   const resultadoData = tagResultado();
   resultadoData.innerHTML = dataAgora;
-
-}
-
-escreveTela();
+}escreveTela();
   
