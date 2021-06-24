@@ -31,3 +31,31 @@ const n = n => n;
 // precisa receber só 1 valor / 1 parametro / 1 linha;
 
 console.log(n('Fabio'));
+
+
+... // resto operation sempre ser o último;
+
+
+// functions guarda valores em arguments *quando chamadas* (usando function)
+
+// adicionar valor padrão a um parametro
+//             a=6 que se não houver argumento será padrão.
+//              null ou undefined retorna o valor padrão.
+function funcao(a=6){
+  console.log(a);
+}
+
+funcao(2);
+
+(function() {
+
+// tirar funções do escopo global IIFE
+// função podendo ser chamada dentro como se fosse fora.
+})();
+
+***
+// usar get ou set
+/* get usa para fingir não ser uma função em objetos... 
+*  set usa para setar um valor(trocar)..
+
+*  this.exemplo (se refere a pessoa que chamou) */
