@@ -19,5 +19,6 @@
 
 - [x] [Calculadora IMC](https://github.com/rafaelcastrobr/CourseFullStack/tree/master/JavaScript/exercicio/IMC) - [Page](https://rafaelcastrobr.github.io/CourseFullStack//JavaScript/exercicio/IMC/index.html)
 - [x] [Data](https://github.com/rafaelcastrobr/CourseFullStack/tree/master/JavaScript/exercicio/Date) - [Page](https://rafaelcastrobr.github.io/CourseFullStack//JavaScript/exercicio/Date/index.html) - Aprimorando uso de funções.
+- [x] [Calculadora](https://github.com/rafaelcastrobr/CourseFullStack/tree/master/JavaScript/exercicio/Calculadora) - [Page](https://rafaelcastrobr.github.io/CourseFullStack/JavaScript/exercicio/Calculadora/)
 
 in progress..
