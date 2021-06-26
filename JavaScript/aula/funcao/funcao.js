@@ -38,9 +38,14 @@ console.log(n('Fabio'));
 
 // functions guarda valores em arguments *quando chamadas* (usando function)
 
-// adicionar valor padrão a um parametro
-//             a=6 que se não houver argumento será padrão.
-//              null ou undefined retorna o valor padrão.
+/**
+* Fabio
+* * adicionar valor padrão a um parametro
+*! a=6 que se não houver argumento será padrão.
+*TODO:          null ou undefined retorna o valor padrão.
+*/
+
+
 function funcao(a=6){
   console.log(a);
 }
@@ -53,9 +58,7 @@ funcao(2);
 // função podendo ser chamada dentro como se fosse fora.
 })();
 
-***
-// usar get ou set
-/* get usa para fingir não ser uma função em objetos... 
-*  set usa para setar um valor(trocar)..
-
-*  this.exemplo (se refere a pessoa que chamou) */
+//? usar get ou set
+/** get usa para fingir não ser uma função em objetos... 
+* set usa para setar um valor(trocar)..
+this.exemplo (se refere a pessoa que chamou) */
