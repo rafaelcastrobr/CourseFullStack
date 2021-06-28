@@ -53,26 +53,3 @@ const b = [...a]; // por mais que eu altere o B não altera o A
 const a3 = a1.concat(a2); // [1,2,3,4,5,6]
 const a3 = a1.concat(a2, [7,8,9], 'carlos');
 const a3 = [...a1, 'lucas', ...a2]; // ...spread (espalha) 
-
-
-// Filter função recebe (valor, indice, array)
-const numeros = [5,60,40,1,9,3,29];
-const numerosFil = numeros.filter(valor => valor > 10);
-
-
-// Filtrando
-
-const pessoas = [
-  {nome: 'Luis', idade: 62},
-  {nome: 'Maria', idade: 23},
-  {nome: 'Eduardo', idade: 55},
-  {nome: 'Letícia', idade: 19},
-  {nome: 'Rosana', idade: 32},
-  {nome: 'Wallace', idade: 47},
-];
-
-const pessoasComNomeGrande = pessoas.filter(obj => obj.nome.length >= 5);
-const pessoaComMais50 = pessoas.filter(obj => obj.idade > 50);
-const pessoaLetraA = pessoas.filter(obj => obj.nome.toLocaleLowerCase().endsWith('a'))
-console.log(pessoaLetraA);
-
