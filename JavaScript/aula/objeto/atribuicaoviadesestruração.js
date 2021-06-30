@@ -10,20 +10,20 @@ const pessoa = {
 };
 
 
-// // pega e transforma em variavel
+// pega e transforma em variavel
   const {nome} = pessoa;
 
-// // altera nome da váriavel
+// altera nome da váriavel
 const { nome: n} = pessoa;
 console.log(n);
 
-// // pega e transforma em variaveis resultado dentro de chaves
+// pega e transforma em variaveis resultado dentro de chaves
   const {endereco: { rua, numero }} = pessoa;
 
   console.log(nome, rua, numero);
 
 
-// // (...) = usa o resto do objeto ou array
+// (...) = usa o resto do objeto ou array
   const { nome = 'Não existe'} = pessoa;  //define padrão
   console.log(nome);
 

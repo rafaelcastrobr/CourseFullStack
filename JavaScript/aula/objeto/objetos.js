@@ -57,3 +57,18 @@ const pessoa1 = {
 
   a.nome = 'Fabio';
   console.log(b);
+
+
+  //! Constructor functions
+
+  function Pessoa(nome, sobrenome) {
+    this.nome = nome;
+    this.sobrenome = sobrenome;
+
+    Object.freeze(this); //* congelar mudanças no objeto
+  }
+
+  const p1 = new Pessoa('Luiz', 'Mel');
+  const p2 = new Pessoa('Maria', 'Paula');
+
+  
