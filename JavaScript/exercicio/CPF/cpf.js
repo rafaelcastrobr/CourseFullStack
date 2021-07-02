@@ -18,25 +18,18 @@ let cpfArray = Array.from(cpfSemDig);
 
 let cpfMultiplica1R = [];
 const cpfMultiplica1 = cpfArray.map(function (valor) {
-  let i = 2;
-  let retultado;
-  while (i <= valor) {
-    resultado = i * valor;
-    console.log(resultado);
+  for (let i = 2; i > valor;i++) {
+    let resultado = i * valor;
     if (resultado > 9) {
       resultado = 0;
+      cpfMultiplica1R = resultado;
+    } 
+    if (resultado <= 9) {
+     cpfMultiplica1R = resultado;
     }
   
   };
 
-  for (let i in valor) {
-    i = 2;
-    console.log(i*valor);
-    i++;
-    return cpfMultiplica1R;
-  }
-  
 });
-console.log(cpfMultiplica1);
 
-
+ console.log(cpfMultiplica1);
