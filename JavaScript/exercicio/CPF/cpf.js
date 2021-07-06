@@ -59,5 +59,5 @@ ValidaCPF.prototype.isSequence = function() {
 }
 
 
-const cpf = new ValidaCPF('407.554.208-45');
+const cpf = new ValidaCPF('070.987.720-03');
 console.log(cpf.valida());
