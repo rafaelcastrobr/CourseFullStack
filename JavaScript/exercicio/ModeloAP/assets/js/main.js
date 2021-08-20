@@ -13,10 +13,12 @@ fetch('pessoas.json')
     resultado.innerHTML = '';
     let valor = document.querySelector('.busca');
     let valorNome = valor.value.toLowerCase();
+    let valorNomeSplit = valorNome.split(' ');
+    
     valor.focus();
     valor.value = ``;
 
-      axios('pessoas.json')
+      axios('https://raw.githubusercontent.com/rafaelcastrobr/CourseFullStack/f1746bbbfb2fb7db251a2f2e51786967510a8f61/JavaScript/exercicio/ModeloAP/pessoas.json')
       .then(resposta => carregaElementos(resposta.data))
       
       function carregaElementos(json) {
@@ -25,21 +27,44 @@ fetch('pessoas.json')
         for(let pessoa of json) {
           let pessoaNome = pessoa.nome.toLowerCase();
           let pessoaSeparada = pessoaNome.split(' ');
-          
-          if(pessoaSeparada[0] === valorNome){
-            p = document.createElement('p');
-            p.classList.add('yes');
-            p.innerHTML = pessoa.nome;
-            p.innerHTML += ' '+ pessoa.email;
+
+            p.innerHTML = `Buscando..`
             resultado.appendChild(p);
-          }
+          
+          setTimeout(function(){
+            resultado.innerHTML = '';
+          }, 500)
+          
+          setTimeout(function() {
+            if((valorNomeSplit[1]) && pessoaSeparada[0] === valorNomeSplit[0] && pessoaSeparada[1] === valorNomeSplit[1]){
+              p = document.createElement('p');
+              p.classList.add('yes');
+              p.innerHTML = pessoa.nome;
+              p.innerHTML += ' '+ pessoa.email;
+              resultado.appendChild(p);
+            } 
+
+          }, 600)
+
+          setTimeout(function () {
+            if((!valorNomeSplit[1]) && pessoaSeparada[0] === valorNomeSplit[0]) {
+              p = document.createElement('p');
+              p.classList.add('yes');
+              p.innerHTML = pessoa.nome;
+              p.innerHTML += ' '+ pessoa.email;
+              resultado.appendChild(p);
+            }
+            
+          }, 600)
+          
         
           setTimeout(function () {
             if(!p.classList.contains('yes')) {
               p.innerText = `Não Encontrado`;
+              resultado.innerHTML = '';
               resultado.appendChild(p);
             }
-          }, 300);
+          }, 900);
           
         
         }
