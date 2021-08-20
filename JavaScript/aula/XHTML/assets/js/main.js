@@ -52,4 +52,3 @@ fetch('pag1.html')
     return resposta.text();
   })
   .then(html => console.log(html))
-  .catch(e => console.error(e));
