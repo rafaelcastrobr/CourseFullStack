@@ -2,9 +2,9 @@
   "name": "aula93",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "main.js",
   "scripts": {
-    "gera": "webpack -w"
+    "dev": "webpack -w"
   },
   "author": "",
   "license": "ISC",
@@ -17,7 +17,9 @@
     "webpack-cli": "^3.3.9"
   },
   "dependencies": {
-    "core-js": "^3.16.2",
-    "regenerator-runtime": "^0.13.9"
+    "core-js": "^3.3.2",
+    "css-loader": "^3.6.0",
+    "regenerator-runtime": "^0.13.3",
+    "style-loader": "^1.3.0"
   }
 }
