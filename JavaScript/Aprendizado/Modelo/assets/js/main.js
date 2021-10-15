@@ -1,3 +1,7 @@
+
+
+/////// Cartola
+/*
 const btn = document.querySelector('.btn');
 btn.addEventListener('click', () => {
   let busca = document.querySelector('.busca');
@@ -45,67 +49,85 @@ axios('cartola.json')
                 resultado.innerHTML += `${nomesIn} - ${clube[id].nome} - ${posicaoFinal} <br>`;
               }
             }
-          
         }
       }
       
     }
   }
 });
-
-
-
-/*
-Time 
-    function carregaElementos(json) {
-      for(let cartola of json) {
-        let clube = cartola.clubes
-          for(let id in clube){
-            let escudo = clube[id].escudos;
-            let times = clube[id].nome
-            for(let escudos in escudo){
-              let t = escudo[escudos];
-              console.log(escudo["60x60"])
-            }
-          }
-      }
-    }
-
-
 */
 
 
-
-
-
 /*
-
-  const btn = document.querySelector('.btn');
-  btn.addEventListener('click', () => {
-    let busca = document.querySelector('.busca');
-    let buscaValor = busca.value
-    let resultado = document.querySelector('.resultado');
-
-    axios('cartola.json')
-      .then(resposta => carregaElementos(resposta.data))
-
-
-    function carregaElementos(json) {
-      for(let cartola of json) {
-        let clube = cartola.clubes
-          for(let id of clube){
-            console.log(id.nome)
-            
-            
-            if(id === buscaValor){
-              resultado.innerHTML = 'Flamengo'
-            }
-            if(id === buscaValor){
-              resultado.innerHTML = 'curitiba'
-            }
-            
-          }
-      }
-    }
-  })
+fetch('pessoas.json')
+  .then(resposta => resposta.json())
+  .then(json => carregaElementosNaPagina(json));
 */
+  
+///////// Pessoas
+  
+
+const btn = document.querySelector('.btn');
+btn.addEventListener('click', () => {
+  const resultado = document.querySelector('.resultado');
+  resultado.innerHTML = '';
+  let valor = document.querySelector('.busca');
+  let valorNome = valor.value.toLowerCase();
+  let valorNomeSplit = valorNome.split(' ');
+  
+  valor.focus();
+  valor.value = ``;
+
+    axios('https://raw.githubusercontent.com/rafaelcastrobr/CourseFullStack/f1746bbbfb2fb7db251a2f2e51786967510a8f61/JavaScript/exercicio/ModeloAP/pessoas.json')
+    .then(resposta => carregaElementos(resposta.data))
+    
+    function carregaElementos(json) {
+      
+      let p = document.createElement('p');
+      for(let pessoa of json) {
+        let pessoaNome = pessoa.nome.toLowerCase();
+        let pessoaSeparada = pessoaNome.split(' ');
+
+          p.innerHTML = `Buscando..`
+          resultado.appendChild(p);
+        
+        setTimeout(function(){
+          resultado.innerHTML = '';
+        }, 500)
+        
+        setTimeout(function() {
+          if((valorNomeSplit[1]) && pessoaSeparada[0] === valorNomeSplit[0] && pessoaSeparada[1] === valorNomeSplit[1]){
+            p = document.createElement('p');
+            p.classList.add('yes');
+            p.innerHTML = pessoa.nome;
+            p.innerHTML += ' '+ pessoa.email;
+            resultado.appendChild(p);
+          } 
+
+        }, 600)
+
+        setTimeout(function () {
+          if((!valorNomeSplit[1]) && pessoaSeparada[0] === valorNomeSplit[0]) {
+            p = document.createElement('p');
+            p.classList.add('yes');
+            p.innerHTML = pessoa.nome;
+            p.innerHTML += ' '+ pessoa.email;
+            resultado.appendChild(p);
+          }
+          
+        }, 600)
+        
+      
+        setTimeout(function () {
+          if(!p.classList.contains('yes')) {
+            p.innerText = `Não Encontrado`;
+            resultado.innerHTML = '';
+            resultado.appendChild(p);
+          }
+        }, 900);
+        
+      
+      }
+    };
+
+});
